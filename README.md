@@ -1,2 +1,15 @@
 # algorithm
-👾알고리즘 문제풀이
+## 🗃️폴더구조
+
+```
+👾Algorithm
+ ├── 📁BOJ
+ ├── 📁JO
+ ├── 📁SWEA
+ ├── 📁SSAFY
+ ├── 📁Tip
+ └── 📄README.md
+```
+
+<br>
+
