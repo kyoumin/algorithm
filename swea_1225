@@ -1,0 +1,41 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class Sw_1225 {
+
+	public static void main(String[] args) {
+		
+		Queue<Integer> queue1 = new LinkedList<Integer>();
+		Scanner sc = new Scanner(System.in);
+		
+		for(int t =1;t<11;t++) {
+		int input;		
+		System.out.print(t+" ");
+		for(int i=0;i<8;i++) {
+			input = sc.nextInt();
+			queue1.offer(input);
+		}
+		
+		int temp =1;
+		while(temp!=0) {
+			
+		for(int cnt=1;cnt<6;cnt++) {
+			temp = queue1.poll()-cnt;
+			if(temp<=0) {
+				temp = 0; 
+				queue1.offer(temp);
+				break;
+			}
+			queue1.offer(temp);
+		}
+		}
+		
+		System.out.print("#"+t+" ");
+		for(int i=0;i<8;i++) {
+		System.out.print(queue1.poll()+" ");
+		}
+		System.out.println();
+	}
+}
+}
