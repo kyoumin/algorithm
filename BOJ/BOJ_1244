@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Alg_1244 {
+
+	//int[] onoff;
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int switch_num = sc.nextInt();//스위치 개수
+
+		int[] onoff;//스위치의 각 상태
+		onoff = new int[switch_num];
+
+		for(int i=0;i<switch_num;i++) {
+			onoff[i] = sc.nextInt();
+		}
+
+
+		int st_num = sc.nextInt();//학생수
+		for(int i=0;i<st_num;i++) {
+			int sex = sc.nextInt();
+			int randnum = sc.nextInt();//각 학생의 성별,랜덤수
+
+				if(sex ==1){ //남학생이면 
+
+					for(int j =0;j<switch_num;j++) {
+						if((j+1)%randnum == 0) {
+							if(onoff[j]==0)
+								onoff[j] =1;
+							else
+								onoff[j] =0;
+
+						}
+					}
+				}
+
+				else { //여학생이면
+
+					for(int j=0;j<switch_num;j++){
+						if((j+1) == st_num) {
+							int temp = st_num;
+							while(temp !=1) {
+								switch[j] = switch[]
+							}
+						}
+					}
+				if(switch)
+
+
+				//}
+
+		}
+
+		for(int k =0;k<switch_num;k++) {
+			System.out.println(onoff[k]+ " ");
+		}
+
+	}
+}
